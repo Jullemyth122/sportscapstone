@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "sass": "^1.79.4"
+  },
+  "name": "sportscapstone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "chokidar": "^4.0.1",
+    "immutable": "^4.3.7",
+    "readdirp": "^4.0.2",
+    "source-map-js": "^1.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-scss": "sass --watch wwwroot/scss:wwwroot/css --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

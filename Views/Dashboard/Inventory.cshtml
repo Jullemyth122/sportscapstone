@@ -1,0 +1,462 @@
+@{
+    Layout = "_DashboardLayout";
+}
+
+<div class="dashboard-body inventory">
+    <div class="title">
+        <h3> Inventory </h3>
+    </div>
+    <div class="inventory-comp">
+        <div class="inv-secline">
+            <div class="inv-sec">
+                <div class="inv-cl-item">
+                    <a class=" active">
+                        <h5> Items </h5>
+                    </a>
+                </div>
+                <div class="inv-cl-item">
+                    <a class=" ">
+                        <h5> Requests </h5>
+                    </a>
+                </div>
+                <div class="inv-cl-item">
+                    <a class=" ">
+                        <h5> Create </h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        @* Section 1 *@
+        <div class="inv-list-comp items active">
+            <div class="inv-list-tags">
+                <div class="s-tags">
+
+                    <div class="inp-s">
+                        <input type="text" class="search" placeholder="Search...">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.25 18.25C11.2469 18.2498 13.1862 17.5813 14.7591 16.351L19.7046 21.2965L21.2954 19.7058L16.3499 14.7603C17.5808 13.1872 18.2497 11.2474 18.25 9.25C18.25 4.28763 14.2124 0.25 9.25 0.25C4.28763 0.25 0.25 4.28763 0.25 9.25C0.25 14.2124 4.28763 18.25 9.25 18.25ZM9.25 2.5C12.9726 2.5 16 5.52738 16 9.25C16 12.9726 12.9726 16 9.25 16C5.52738 16 2.5 12.9726 2.5 9.25C2.5 5.52738 5.52738 2.5 9.25 2.5Z"
+                                fill="#FF3939" />
+                            <path
+                                d="M10.8381 7.65923C11.2644 8.08673 11.4996 8.65147 11.4996 9.24997H13.7496C13.7504 8.65873 13.6341 8.07319 13.4074 7.52713C13.1807 6.98107 12.8481 6.48531 12.4288 6.06847C10.7256 4.36747 7.77244 4.36747 6.07031 6.06847L7.65881 7.66148C8.51381 6.80873 9.98756 6.81098 10.8381 7.65923Z"
+                                fill="#FF3939" />
+                        </svg>
+                    </div>
+
+                    <div class="inv-paging">
+                        <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.41414 10.9999L12.707 20.2928L11.2928 21.707L0.585711 10.9999L11.2928 0.292816L12.707 1.70703L3.41414 10.9999Z"
+                                fill="white" />
+                        </svg>
+                        <h4> 1 </h4>
+                        <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.58586 11.0001L0.292969 1.70718L1.70718 0.292969L12.4143 11.0001L1.70718 21.7072L0.292969 20.293L9.58586 11.0001Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+
+
+                </div>
+                <div class="d-tags">
+                    <div class="inv-date">
+                        <select name="" id="">
+                            <option value=""> 09 / 22 / 2024 </option>
+                            <option value=""> 09 / 22 / 2024 </option>
+                            <option value=""> 09 / 22 / 2024 </option>
+                            <option value=""> 09 / 22 / 2024 </option>
+                        </select>
+                    </div>
+                    <div class="inv-del">
+                        <button class="del">
+                            <h4> Delete Item </h4>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="inv-list-items">
+                <div class="item-ipdqt">
+                    <div class="item-sx">
+                        <div class="item-tgs">
+                            <h5 class="ts"> ID </h5>
+                            <h5 class="ts"> Prod. Name </h5>
+                            <h5 class="ts"> Prod. Brand </h5>
+                            <h5 class="ts"> Date Added </h5>
+                            <h5 class="ts"> Quantity </h5>
+                            <h5 class="ts"> Type Prod. </h5>
+                            <h5 class="ts"> Image </h5>
+                        </div>
+                        <div class="item-nms">
+                            <h5 class="ns"> 1013131 </h5>
+                            <h5 class="ns"> Jefferson Nike </h5>
+                            <h5 class="ns"> Nike </h5>
+                            <h5 class="ns"> 09 / 22 / 27 </h5>
+                            <h5 class="ns"> 33 </h5>
+                            <h5 class="ns"> Cloths </h5>
+                            <div class="ns-img">
+                                <img src="~/img/ado.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-sy">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.03125 13.0625C6.8942 13.0625 7.59375 12.3629 7.59375 11.5C7.59375 10.6371 6.8942 9.9375 6.03125 9.9375C5.16831 9.9375 4.46875 10.6371 4.46875 11.5C4.46875 12.3629 5.16831 13.0625 6.03125 13.0625Z"
+                                fill="#F1DF3F" />
+                            <path
+                                d="M16.9688 13.0625C17.8317 13.0625 18.5312 12.3629 18.5312 11.5C18.5312 10.6371 17.8317 9.9375 16.9688 9.9375C16.1058 9.9375 15.4062 10.6371 15.4062 11.5C15.4062 12.3629 16.1058 13.0625 16.9688 13.0625Z"
+                                fill="#F1DF3F" />
+                            <path
+                                d="M11.5 13.0625C12.3629 13.0625 13.0625 12.3629 13.0625 11.5C13.0625 10.6371 12.3629 9.9375 11.5 9.9375C10.6371 9.9375 9.9375 10.6371 9.9375 11.5C9.9375 12.3629 10.6371 13.0625 11.5 13.0625Z"
+                                fill="#F1DF3F" />
+                            <path
+                                d="M11.5 22.4375C9.33677 22.4375 7.22212 21.796 5.42346 20.5942C3.62479 19.3924 2.22291 17.6842 1.39507 15.6856C0.567239 13.687 0.35064 11.4879 0.772666 9.36621C1.19469 7.24454 2.23639 5.29566 3.76602 3.76602C5.29566 2.23639 7.24454 1.19469 9.36621 0.772666C11.4879 0.35064 13.687 0.567239 15.6856 1.39507C17.6842 2.22291 19.3924 3.62479 20.5942 5.42346C21.796 7.22212 22.4375 9.33677 22.4375 11.5C22.4342 14.3998 21.2808 17.1799 19.2303 19.2303C17.1799 21.2808 14.3998 22.4342 11.5 22.4375ZM11.5 2.12501C9.64581 2.12501 7.83324 2.67484 6.29153 3.70498C4.74982 4.73512 3.54821 6.19929 2.83863 7.91235C2.12906 9.62541 1.94341 11.5104 2.30514 13.329C2.66688 15.1475 3.55976 16.818 4.87088 18.1291C6.182 19.4402 7.85246 20.3331 9.67103 20.6949C11.4896 21.0566 13.3746 20.8709 15.0877 20.1614C16.8007 19.4518 18.2649 18.2502 19.295 16.7085C20.3252 15.1668 20.875 13.3542 20.875 11.5C20.8721 9.01449 19.8835 6.6316 18.1259 4.87408C16.3684 3.11655 13.9855 2.1279 11.5 2.12501Z"
+                                fill="#F1DF3F" />
+                        </svg>
+
+                        <div class="req-item not-show p">
+                            <h6>Pending . . .</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-ipdqt">
+                    <div class="item-sx">
+                        <div class="item-tgs">
+                            <h5 class="ts"> ID </h5>
+                            <h5 class="ts"> Prod. Name </h5>
+                            <h5 class="ts"> Prod. Brand </h5>
+                            <h5 class="ts"> Date Added </h5>
+                            <h5 class="ts"> Quantity </h5>
+                            <h5 class="ts"> Type Prod. </h5>
+                            <h5 class="ts"> Image </h5>
+                        </div>
+                        <div class="item-nms">
+                            <h5 class="ns"> 1013131 </h5>
+                            <h5 class="ns"> Jefferson Nike </h5>
+                            <h5 class="ns"> Nike </h5>
+                            <h5 class="ns"> 09 / 22 / 27 </h5>
+                            <h5 class="ns"> 33 </h5>
+                            <h5 class="ns"> Cloths </h5>
+                            <div class="ns-img">
+                                <img src="~/img/ado.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-sy">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.9998 21.2C5.3598 21.2 0.799805 16.64 0.799805 11C0.799805 5.36005 5.3598 0.800049 10.9998 0.800049C16.6398 0.800049 21.1998 5.36005 21.1998 11C21.1998 16.64 16.6398 21.2 10.9998 21.2ZM10.9998 2.00005C6.0198 2.00005 1.9998 6.02005 1.9998 11C1.9998 15.98 6.0198 20 10.9998 20C15.9798 20 19.9998 15.98 19.9998 11C19.9998 6.02005 15.9798 2.00005 10.9998 2.00005Z"
+                                fill="#08BE2F" />
+                            <path
+                                d="M9.80008 15.44L4.58008 10.22L5.42008 9.37998L9.80008 13.76L16.5801 6.97998L17.4201 7.81998L9.80008 15.44Z"
+                                fill="#08BE2F" />
+                        </svg>
+
+                        <div class="req-item not-show g">
+                            <h6>Approved. . .</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-ipdqt">
+                    <div class="item-sx">
+                        <div class="item-tgs">
+                            <h5 class="ts"> ID </h5>
+                            <h5 class="ts"> Prod. Name </h5>
+                            <h5 class="ts"> Prod. Brand </h5>
+                            <h5 class="ts"> Date Added </h5>
+                            <h5 class="ts"> Quantity </h5>
+                            <h5 class="ts"> Type Prod. </h5>
+                            <h5 class="ts"> Image </h5>
+                        </div>
+                        <div class="item-nms">
+                            <h5 class="ns"> 1013131 </h5>
+                            <h5 class="ns"> Jefferson Nike </h5>
+                            <h5 class="ns"> Nike </h5>
+                            <h5 class="ns"> 09 / 22 / 27 </h5>
+                            <h5 class="ns"> 33 </h5>
+                            <h5 class="ns"> Cloths </h5>
+                            <div class="ns-img">
+                                <img src="~/img/ado.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-sy">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.41789 7.41789C7.80842 7.02737 8.44158 7.02737 8.83211 7.41789L11.5 10.0858L14.1679 7.41789C14.5584 7.02737 15.1916 7.02737 15.5821 7.41789C15.9726 7.80842 15.9726 8.44158 15.5821 8.83211L12.9142 11.5L15.5821 14.1679C15.9726 14.5584 15.9726 15.1916 15.5821 15.5821C15.1916 15.9726 14.5584 15.9726 14.1679 15.5821L11.5 12.9142L8.83211 15.5821C8.44158 15.9726 7.80842 15.9726 7.41789 15.5821C7.02737 15.1916 7.02737 14.5584 7.41789 14.1679L10.0858 11.5L7.41789 8.83211C7.02737 8.44158 7.02737 7.80842 7.41789 7.41789Z"
+                                    fill="#D11717" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.375 11.5C0.375 5.35602 5.35602 0.375 11.5 0.375C17.644 0.375 22.625 5.35602 22.625 11.5C22.625 17.644 17.644 22.625 11.5 22.625C5.35602 22.625 0.375 17.644 0.375 11.5ZM11.5 2.375C6.46059 2.375 2.375 6.46059 2.375 11.5C2.375 16.5394 6.46059 20.625 11.5 20.625C16.5394 20.625 20.625 16.5394 20.625 11.5C20.625 6.46059 16.5394 2.375 11.5 2.375Z"
+                                    fill="#D11717" />
+                            </svg>
+                            <div class="req-item not-show r">
+                                <h6>Denied. . .</h6>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @* --------- Section 1 *@
+
+
+        @* +++++++ Section 2 *@
+        <div class="inv-list-comp requests">
+            <div class="inv-list-tags">
+                <div class="s-tags">
+
+                    <div class="inp-s">
+                        <input type="text" class="search" placeholder="Search...">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.25 18.25C11.2469 18.2498 13.1862 17.5813 14.7591 16.351L19.7046 21.2965L21.2954 19.7058L16.3499 14.7603C17.5808 13.1872 18.2497 11.2474 18.25 9.25C18.25 4.28763 14.2124 0.25 9.25 0.25C4.28763 0.25 0.25 4.28763 0.25 9.25C0.25 14.2124 4.28763 18.25 9.25 18.25ZM9.25 2.5C12.9726 2.5 16 5.52738 16 9.25C16 12.9726 12.9726 16 9.25 16C5.52738 16 2.5 12.9726 2.5 9.25C2.5 5.52738 5.52738 2.5 9.25 2.5Z"
+                                fill="#FF3939" />
+                            <path
+                                d="M10.8381 7.65923C11.2644 8.08673 11.4996 8.65147 11.4996 9.24997H13.7496C13.7504 8.65873 13.6341 8.07319 13.4074 7.52713C13.1807 6.98107 12.8481 6.48531 12.4288 6.06847C10.7256 4.36747 7.77244 4.36747 6.07031 6.06847L7.65881 7.66148C8.51381 6.80873 9.98756 6.81098 10.8381 7.65923Z"
+                                fill="#FF3939" />
+                        </svg>
+                    </div>
+
+                    <div class="inv-paging">
+                        <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.41414 10.9999L12.707 20.2928L11.2928 21.707L0.585711 10.9999L11.2928 0.292816L12.707 1.70703L3.41414 10.9999Z"
+                                fill="white" />
+                        </svg>
+                        <h4> 1 </h4>
+                        <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.58586 11.0001L0.292969 1.70718L1.70718 0.292969L12.4143 11.0001L1.70718 21.7072L0.292969 20.293L9.58586 11.0001Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="d-tags">
+                    <div class="inv-date">
+                        <select name="" id="">
+                            <option value=""> 09 / 22 / 2024 </option>
+                            <option value=""> 09 / 22 / 2024 </option>
+                            <option value=""> 09 / 22 / 2024 </option>
+                            <option value=""> 09 / 22 / 2024 </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="inv-list-items">
+                <div class="item-ipdqt">
+                    <div class="item-sx">
+                        <div class="item-tgs">
+                            <h5 class="ts"> ID </h5>
+                            <h5 class="ts"> Prod. Name </h5>
+                            <h5 class="ts"> Prod. Brand </h5>
+                            <h5 class="ts"> Date Added </h5>
+                            <h5 class="ts"> Quantity </h5>
+                            <h5 class="ts"> Type Prod. </h5>
+                            <h5 class="ts"> Image </h5>
+                        </div>
+                        <div class="item-nms">
+                            <h5 class="ns"> 1013131 </h5>
+                            <h5 class="ns"> Jefferson Nike </h5>
+                            <h5 class="ns"> Nike </h5>
+                            <h5 class="ns"> 09 / 22 / 27 </h5>
+                            <h5 class="ns"> 33 </h5>
+                            <h5 class="ns"> Cloths </h5>
+                            <div class="ns-img">
+                                <img src="~/img/ado.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-sy requests-req">
+                        <div class="req-item">
+                            <h6> Approve </h6>
+                            <svg width="17" height="10" viewBox="0 0 17 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.19215 9.8271V5.5001H0.0771484V4.5001H9.19215V0.173096L16.7881 5.0001L9.19215 9.8271Z"
+                                    fill="#000" />
+                            </svg>
+                        </div>
+                        <div class="req-item">
+                            <h6> Deny </h6>
+                            <svg width="17" height="10" viewBox="0 0 17 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.19215 9.8271V5.5001H0.0771484V4.5001H9.19215V0.173096L16.7881 5.0001L9.19215 9.8271Z"
+                                    fill="#000" />
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item-ipdqt">
+                    <div class="item-sx">
+                        <div class="item-tgs">
+                            <h5 class="ts"> ID </h5>
+                            <h5 class="ts"> Prod. Name </h5>
+                            <h5 class="ts"> Prod. Brand </h5>
+                            <h5 class="ts"> Date Added </h5>
+                            <h5 class="ts"> Quantity </h5>
+                            <h5 class="ts"> Type Prod. </h5>
+                            <h5 class="ts"> Image </h5>
+                        </div>
+                        <div class="item-nms">
+                            <h5 class="ns"> 1013131 </h5>
+                            <h5 class="ns"> Jefferson Nike </h5>
+                            <h5 class="ns"> Nike </h5>
+                            <h5 class="ns"> 09 / 22 / 27 </h5>
+                            <h5 class="ns"> 33 </h5>
+                            <h5 class="ns"> Cloths </h5>
+                            <div class="ns-img">
+                                <img src="~/img/ado.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-sy requests-req">
+                        <div class="req-item">
+                            <h6> Approve </h6>
+                            <svg width="17" height="10" viewBox="0 0 17 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.19215 9.8271V5.5001H0.0771484V4.5001H9.19215V0.173096L16.7881 5.0001L9.19215 9.8271Z"
+                                    fill="#000" />
+                            </svg>
+                        </div>
+                        <div class="req-item">
+                            <h6> Deny </h6>
+                            <svg width="17" height="10" viewBox="0 0 17 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.19215 9.8271V5.5001H0.0771484V4.5001H9.19215V0.173096L16.7881 5.0001L9.19215 9.8271Z"
+                                    fill="#000" />
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item-ipdqt">
+                    <div class="item-sx">
+                        <div class="item-tgs">
+                            <h5 class="ts"> ID </h5>
+                            <h5 class="ts"> Prod. Name </h5>
+                            <h5 class="ts"> Prod. Brand </h5>
+                            <h5 class="ts"> Date Added </h5>
+                            <h5 class="ts"> Quantity </h5>
+                            <h5 class="ts"> Type Prod. </h5>
+                            <h5 class="ts"> Image </h5>
+                        </div>
+                        <div class="item-nms">
+                            <h5 class="ns"> 1013131 </h5>
+                            <h5 class="ns"> Jefferson Nike </h5>
+                            <h5 class="ns"> Nike </h5>
+                            <h5 class="ns"> 09 / 22 / 27 </h5>
+                            <h5 class="ns"> 33 </h5>
+                            <h5 class="ns"> Cloths </h5>
+                            <div class="ns-img">
+                                <img src="~/img/ado.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-sy requests-req">
+                        <div class="req-item">
+                            <h6> Approve </h6>
+                            <svg width="17" height="10" viewBox="0 0 17 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.19215 9.8271V5.5001H0.0771484V4.5001H9.19215V0.173096L16.7881 5.0001L9.19215 9.8271Z"
+                                    fill="#000" />
+                            </svg>
+                        </div>
+                        <div class="req-item">
+                            <h6> Deny </h6>
+                            <svg width="17" height="10" viewBox="0 0 17 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.19215 9.8271V5.5001H0.0771484V4.5001H9.19215V0.173096L16.7881 5.0001L9.19215 9.8271Z"
+                                    fill="#000" />
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* ---------- Section 2 *@
+
+        @* +++++++ Section 3 *@
+        <div class="inv-list-comp creates">
+
+            <div class="inv-create-comp">
+                <h1> Create Product </h1>
+
+                <div class="inv-cp-ppqty">
+                    <div class="image">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.616 16C1.15533 16 0.771 15.846 0.463 15.538C0.155 15.23 0.000666667 14.8453 0 14.384V1.616C0 1.15533 0.154333 0.771 0.463 0.463C0.771666 0.155 1.156 0.000666667 1.616 0H14.385C14.845 0 15.2293 0.154333 15.538 0.463C15.8467 0.771666 16.0007 1.156 16 1.616V14.385C16 14.845 15.846 15.2293 15.538 15.538C15.23 15.8467 14.8453 16.0007 14.384 16H1.616ZM1.616 15H14.385C14.5383 15 14.6793 14.936 14.808 14.808C14.9367 14.68 15.0007 14.5387 15 14.384V1.616C15 1.462 14.936 1.32067 14.808 1.192C14.68 1.06333 14.5387 0.999333 14.384 1H1.616C1.462 1 1.32067 1.064 1.192 1.192C1.06333 1.32 0.999333 1.46133 1 1.616V14.385C1 14.5383 1.064 14.6793 1.192 14.808C1.32 14.9367 1.461 15.0007 1.615 15M3.5 12.5H12.654L9.827 8.73L7.212 12.038L5.462 9.923L3.5 12.5Z"
+                                fill="white" />
+                        </svg>
+                        @* <img src="" alt=""> *@
+                    </div>
+                    <form action="" class="fill-inv">
+                        <div class="inp-inv">
+                            <input type="text" placeholder="Product Name" />
+                        </div>
+                        <div class="inp-inv">
+                            <input type="text" placeholder="Product Brand" />
+                        </div>
+                        <div class="inp-inv">
+                            <input type="text" placeholder="Quantity" />
+                        </div>
+                        <div class="inp-inv">
+                            <input type="text" placeholder="Type of Product" />
+                        </div>
+                        <div class="inp-inv">
+                            <input type="text" placeholder="Age Range" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        @* ---------- Section 3 *@
+    </div>
+</div>
+
+
+<script>
+
+    const invListComps = document.querySelectorAll('.inv-list-comp');
+
+
+    const invSecSelection = document.querySelectorAll('.inv-sec .inv-cl-item');
+
+    invSecSelection.forEach((elem, i) => {
+        elem.querySelector('a').addEventListener("click", () => {
+            invSecSelection.forEach((e) => {
+                e.querySelector('a').classList.remove('active'); // Ensure we're removing from the correct element
+            });
+            invListComps.forEach(comp => comp.classList.remove('active'));
+            elem.querySelector('a').classList.add('active'); // Add active to the clicked element
+            invListComps[i].classList.add('active'); // Add active to the clicked element
+        });
+    });
+
+    const itemIpdqt = document.querySelectorAll('.inventory-comp .item-ipdqt')
+
+    itemIpdqt.forEach((elem, i) => {
+
+        console.log(elem)
+        const itemSySvg = elem.querySelector('.item-sy svg')
+        const itemReq = elem.querySelector('.item-sy .req-item'); // Make sure to add the dot here
+
+        itemSySvg.addEventListener("click", () => {
+            itemReq.classList.toggle('not-show');
+        })
+    })
+
+
+</script>

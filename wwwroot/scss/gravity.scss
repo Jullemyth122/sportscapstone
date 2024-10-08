@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.gravity-comp {
+    height: 85vh;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    font-family: "Oswald", sans-serif;
+    
+    .box {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+
+        &:nth-child(1) {
+            background: #52a5fdcb;
+            right: 10%;
+            top: 10%;
+            transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+            border: 0px;
+            background: #79a6efcb;
+            left: 10%;
+            top: 10%;
+            transform: rotate(27deg);
+        }
+        &:nth-child(3) {
+            border: 0px;
+            background: #4067a6cb;
+            left: 10%;
+            bottom: 10%;
+            transform: rotate(92deg);
+        }
+        &:nth-child(4) {
+            border: 0px;
+            background: #52bbfdcb;
+            right: 10%;
+            bottom: 10%;
+            transform: rotate(275deg);
+        }
+    }
+
+    h1 {
+        // position: absolute;
+        font-size: 7vw;
+        color: #fff;
+    }
+    .sp-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    
+        h1 {
+            font-size: 7vw;
+            opacity: 0.2;
+            color: rgb(60, 134, 252);
+            // clip-path: polygon(0 100%, 0 0, 0 0, 0 100%);
+        }
+    
+        &:nth-child(1) h1 {
+            opacity: 1;
+            color: #fff;
+            clip-path: polygon(73% 100%, 82% 0, 100% 0, 91% 100%);
+        }
+        
+        &:nth-child(3) h1 {
+            opacity: 1;
+            color: #fff;
+            clip-path: polygon(57% 100%, 67% 0, 77% 0, 67% 100%);
+        }
+        
+
+        &:nth-child(5) h1 {
+            opacity: 1;
+            color: #fff;
+            clip-path: polygon(41% 100%, 51% 0, 61% 0, 51% 100%);
+        }
+        
+        
+        &:nth-child(7) h1 {
+            opacity: 1;
+            color: #fff;
+            clip-path: polygon(25% 100%, 35% 0, 45% 0, 35% 100%);
+        }
+        
+
+        
+        &:nth-child(9) h1 {
+            opacity: 1;
+            color: #fff;
+            clip-path: polygon(9% 100%, 19% 0, 29% 0, 19% 100%);
+        }
+        
+
+    }
+    
+    
+    
+}
